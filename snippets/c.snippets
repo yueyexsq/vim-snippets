@@ -63,23 +63,29 @@ snippet nocxx
 ## Control Statements
 # if
 snippet if
-	if (${1:true}) {
+	if (${1:true})
+	{
 		${0:${VISUAL}}
 	}
 snippet ife
-	if (${1:true}) {
+	if (${1:true})
+	{
 		${2:${VISUAL}}
-	} else {
+	}
+	else
+	{
 		${0}
 	}
 # else
 snippet el
-	else {
+	else
+	{
 		${0:${VISUAL}}
 	}
 # else if
 snippet elif
-	else if (${1:true}) {
+	else if (${1:true})
+	{
 		${0:${VISUAL}}
 	}
 # ifi
@@ -90,7 +96,8 @@ snippet t Ternary: `condition ? true : false`
 	$1 ? $2 : $0
 # switch
 snippet switch
-	switch (${1:/* variable */}) {
+	switch (${1:/* variable */})
+	{
 		case ${2:/* variable case */}:
 			${3}
 			${4:break;}${5}
@@ -99,7 +106,8 @@ snippet switch
 	}
 # switch without default
 snippet switchndef
-	switch (${1:/* variable */}) {
+	switch (${1:/* variable */})
+	{
 		case ${2:/* variable case */}:
 			${3}
 			${4:break;}${5}
@@ -117,26 +125,31 @@ snippet ex
 ## Loops
 # for
 snippet for
-	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+	for (int32 ${2:i} = 0; $2 < ${1:count}; $2${3:++})
+	{
 		${4}
 	}
 # for (custom)
 snippet forr
-	for (int ${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++}) {
+	for (int32 ${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++})
+	{
 		${5}
 	}
 # while
 snippet wh
-	while (${1:1}) {
+	while (${1:1})
+	{
 		${0:${VISUAL}}
 	}
 snippet wht
-	while (true) {
+	while (true)
+	{
 		${0:${VISUAL}}
 	}
 # do... while
 snippet do
-	do {
+	do
+	{
 		${0:${VISUAL}}
 	} while ($1);
 ##
