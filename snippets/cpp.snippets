@@ -230,3 +230,38 @@ snippet af auto function
 	{
 		${0}
 	};
+
+snippet ///
+////////////////////////////////////////////////////////////////////////////////
+
+snippet fileh
+/*******************************************************
+* Copyright (c) 2021,  All rights reserved.
+*
+* FileName: ${1:FileName}.h
+* Summary:
+* Date: 2022/10/18
+*******************************************************/
+	#ifndef _FILE_NAME_H_
+	#define _FILE_NAME_H_
+
+NAMESPACE_BEGIN(battle_map)
+
+class ClassName
+{
+public:
+	ClassName();
+	virtual ~ClassName();
+private:
+};
+
+NAMESPACE_END(battle_map)
+
+	#endif // _FILE_NAME_H_
+
+snippet filec
+	#include "FileName.h"
+
+NAMESPACE_BEGIN(battle_map)
+
+NAMESPACE_END(battle_map)

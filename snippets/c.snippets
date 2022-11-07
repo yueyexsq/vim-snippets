@@ -65,7 +65,6 @@ snippet nocxx
 snippet if
 	if (${1:true})
 	{
-		${0:${VISUAL}}
 	}
 snippet ife
 	if (${1:true})
@@ -127,14 +126,18 @@ snippet ex
 snippet for
 	for (int32 ${2:i} = 0; $2 < ${1:count}; $2${3:++})
 	{
-		${4}
 	}
-# for (custom)
-snippet forr
-	for (int32 ${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++})
+
+snippet foru
+	for (uint32 ${2:i} = 0; $2 < ${1:count}; $2${3:++})
 	{
-		${5}
 	}
+
+snippet fors
+	for (size_t ${2:i} = 0; $2 < ${1:count}; $2${3:++})
+	{
+	}
+
 # while
 snippet wh
 	while (${1:1})
@@ -156,9 +159,9 @@ snippet do
 ## Functions
 # function definition
 snippet fun
+	////////////////////////////////////////////////////////////////////////////////
 	${1:void} ${2:function_name}(${3})
 	{
-		${4}
 	}
 # function definition with zero parameters
 snippet fun0
