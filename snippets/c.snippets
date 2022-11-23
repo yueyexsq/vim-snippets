@@ -63,11 +63,11 @@ snippet nocxx
 ## Control Statements
 # if
 snippet if
-	if (${1:true})
+	if (${1})
 	{
 	}
 snippet ife
-	if (${1:true})
+	if (${1})
 	{
 		${2:${VISUAL}}
 	}
@@ -124,7 +124,7 @@ snippet ex
 ## Loops
 # for
 snippet for
-	for (int32 ${2:i} = 0; $2 < ${1:count}; $2${3:++})
+	for (${1})
 	{
 	}
 
